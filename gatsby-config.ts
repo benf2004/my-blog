@@ -11,11 +11,11 @@ const config: GatsbyConfig = {
     siteTitle: `Minimal Blog`,
     siteTitleAlt: `Minimal Blog - Gatsby Theme`,
     siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteUrl: `https://blog.phooey.foo`,
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@benf2004`,
   },
   trailingSlash: `never`,
   plugins: [
