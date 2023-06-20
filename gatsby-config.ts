@@ -10,7 +10,7 @@ const config: GatsbyConfig = {
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.mjs
     siteTitle: `My Blog`,
     siteTitleAlt: `My Blog`,
-    siteHeadline: `Ben Finch Blog -`,
+    siteHeadline: `Ben Finch Blog`,
     siteUrl: `https://blog.phooey.foo`,
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteImage: `/banner.jpg`,
