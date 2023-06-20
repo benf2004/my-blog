@@ -7,7 +7,7 @@ tags:
 - Writing
 --- 
 
-<img src="dandelion.png"></img>
+<img src="./dandelion.png"></img>
 
 Once upon a time, in a meadow bathed in golden sunlight, a whimsical dance unfolded. A gentle breeze whispered through the grass, and the dandelion seeds, with their fluffy parachutes, began to sway and twirl in perfect harmony. Each seed held within it the potential for growth and transformation, just like the dreams and aspirations of young adults stepping into the vast meadow of life.
 
