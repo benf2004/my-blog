@@ -1,8 +1,8 @@
 ---
 title: Scottsdale Wealth Advisory Scholarship Essay Submission
 date: 2023-06-20
-excerpt: "An essay about wealth management for young people"
-timeToRead: "5 Minutes"
+excerpt: An essay about wealth management for young people
+timeToRead: 5 Minutes
 tags:
 - Writing
 --- 
