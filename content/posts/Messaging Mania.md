@@ -1,0 +1,45 @@
+---
+title: Programming Project
+date: 2022-04-24
+excerpt: About the early days of OA2Gsheets
+timeToRead: 5 Minutes
+tags:
+- Blogspot imported
+- Essays
+- Tech
+--- 
+
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1fQ_-xQFfgGUHosy1TWDsf2_AedeF77CSN30G8ZGskN3p0ORHBgWW32elZDRLHudJo5eT1IILHeYZZ35vvuqcGOPjs-3w1QtuyPSdliXY1y_AoHr0ljz7Y8uNlZfqTaQRdT5NYY0l-818jNZRx1qZ5t8a_iEwAoxdNoVn4UFF2Rl02pt64tH6UDZS/w548-h274/rcs.jpg)](https://www.blogger.com/blog/post/edit/2067534601276460215/4435168024504564946#)
+
+  
+
+ Hello everyone. Those of you who know me already know I am passionate about technology. One of the areas I think is most ridiculously behind in our technology is messaging communication. I am very disappointed in the state of messaging communications in 2022. I wrote an essay about this back in December (2021) for my English class. My prompt was to "craft a narrative that also serves two purposes: to entertain your audience and to call for the reform of a current situation." I hope you enjoy the essay and let me know if you have any thoughts in the comments below. Also, pardon the cheesy intro and conclusion paragraphs.
+---
+
+Ben Finch
+
+Mr. C.
+
+AP Language & Composition 
+
+19 December 2021
+
+Messaging Mania
+
+In a digital world where it seems as though there are thousands of ways to communicate with each other, it can be stressful to try to connect with someone who has a different type of device or operating system. Not only are cross-compatibility issues very prevalent, but just deciding what medium to communicate with someone can be stressful. Although companies have created numerous services that allow users to chat with one another, it seems that two, at least on mobile phones, have risen to the top in the United States. The first is a universal standard that just about every phone supports: text messaging AKA SMS/MMS (which stand for short message service and multimedia messaging service, respectively). SMS is a nearly three-decade-old unencrypted messaging standard that allows users to send 160 character messages via SMS Centers accessed through cell towers; MMS is merely a technical extension of the SMS that allows users to send pictures and videos via a similar protocol. The second is a communication medium created by Apple and exclusive to their devices: iMessage. iMessage uses internet-based connectivity to securely send messages between users. It also supports many convenient features like typing indicators, read receipts, apps/games, emoji reactions, and even Apple pay. Because of these handy features and the widespread adoption of iPhones in the US, the social implications of not being able to access iMessage, especially as a teenager, are greater than you might initially think.
+
+When my brother was entering high school in about 2015, he faced an unexpected predicament. My parents had graciously gifted him a phone during the previous Christmas, but he had a problem with it: it was a Moto X, which runs on Android. Android phones typically have better battery life and more options for a cheaper price than iPhones, making it a no-brainer for my parents. But Apple refused (and continues to refuse) to support iMessage on Android devices, so he felt socially ostracized. “I’m left out of all the group chats,” he would complain. Nobody with an iPhone seemed to be interested in texting him, especially in a group text, which would often be a mess cross-platform and carrier. He was reduced to his status as a grubby green bubble. When his friends would first text him, they would often react with disgust or condescending disappointment. Well, he was fed up with this poor treatment and decided that he would get an iPhone. He begged and begged, and eventually, my parents said they would subsidize part of his purchase if he saved up the rest to buy an iPhone for a gift. So, after saving up for a few months, he bought an iPhone 5S, which was a few generations old at that point. Compared to his Moto X, the battery life and camera were laughable, but he did not care. He got what he wanted to achieve high social status: iMessage. Suddenly, he was flooded with messages like “you’re a blue bubble now!” or “nice to see you got an iPhone”. And, best of all, he gained access to the iPhone exclusive group chats. It wasn’t like he had become a celebrity; he had just switched phone operating systems. Yet it seemed as though people viewed him as socially superior than in his green bubble hood. The interesting thing is that his experience is not unique. Most Android-to-iPhone users experience something like this, at least in the United States. iPhone users’ reactions to having a friend switch clearly illustrate the advantage internet-based messaging has over SMS. Not only are there social implications with texting an iPhone as an Android user, but there are also technical issues.
+
+Because MMS is a nearly 20-year-old standard, sending pictures and especially videos over text messages is absolutely awful. When I was in seventh grade, I was using my brother’s old iPhone 5s, which I had recently inherited, to text with my friends. I had many friends with Android phones, and I usually had no problem messaging them. Because I had seen what my brother went through, I actively tried not to be prejudiced toward “green bubbles”, but that didn’t fix the technical limitations of MMS. One time, I had a friend who supposedly got “high” by eating an absurdly large amount of Rice Krispy treats at a quiz bowl competition (don’t ask; I don’t know). Anyways, there was a silly video of him acting crazy floating around, and I wanted to see it. So, my friend, who had an Android phone, sent me the video. When I received it I could hardly see or hear anything. The person who had taken the video already had a bad camera, but MMS had compressed the video so much that it was nearly unwatchable. If I had tried to send the video to someone else over MMS again, the quality would have been laughable. This obviously frustrated me, so I had to pester my friends until they would show it to me in person. Eventually, they did but I was left with a lingering frustration about the state of messaging in the late 2010s. Sending videos over MMS is like asking USPS to mail your package using a horse.
+
+Nowadays, I (and many others) have a slew of messaging apps to more securely and conveniently chat over the internet: GroupMe, Facebook Messenger, Google Hangouts, Signal, Telegram, Whatsapp…the list goes on and on. It’s not like their functionalities are all that different, it’s just that everybody has a different one they want to use. And yet, most people still default to the unencrypted, slow, inconvenient text messaging. People are used to using their phone numbers to text and trying to convince them to download yet another app to message them is a hard sell (and setting it up is a nightmare for the technologically challenged). Luckily, Google and US phone carriers have developed a new internet-based open standard for texting called Rich Communication Services or RCS. It allows the sending of high-resolution photo and video sharing, peer-to-peer payment, sharing locations, read receipts, typing indicators, and many of the other features iMessage users currently enjoy. The best part about RCS is that it just works - you don’t have to download a new app to get it to work. When you text someone else with an RCS-enabled device, it will automatically default to send via RCS. Google has already rolled out RCS to nearly all Android devices. Apple has said absolutely nothing about if they plan to support this new standard. In fact, leaked documents reveal that company executives understand that iMessage locks customers into Apple products. This is why I propose that the Federal Communications Commission (FCC) mandate the adoption of RCS to all major phone operating systems (**cough cough Apple**). Some would argue that doing this would be government overreach. However, the FCC has mandated the adoption of other standards before, such as text to access 911 and caller ID. Admittedly, adopting a whole new texting standard is a bit of a larger undertaking than extending support of existing standards. Another concern is that currently, RCS is only end-to-end encrypted in one-person messages, not in group chats. However, those developing the standard are working on allowing for E2E encryption for all messages. If they succeed, the FCC could mandate RCS on the basis of the Fourth Amendment right to privacy; SMS and MMS remain insecure. 
+
+Imagine a world where you don’t have to worry about what type of phone your friend has, where sending a video is as easy as making a PB&J, where consumer choice is protected and green bubbles aren’t rejected, and where you only have one messaging app. That world is possible with the widespread adoption of RCS.  
+
+---
+
+Additional Reading:
+
+[Let's Chat About RCS (The Verge - Podcast)](https://www.theverge.com/2021/11/16/22783220/vergecast-podcast-rcs-explainer-google)  
+
+[What is RCS? (Digital Trends)](https://www.digitaltrends.com/mobile/what-is-rcs-messaging/)

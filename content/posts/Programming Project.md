@@ -6,6 +6,7 @@ timeToRead: 5 Minutes
 tags:
 - Blogspot imported
 - Programming
+- Tech
 --- 
 
 By Ben Finch
