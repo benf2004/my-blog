@@ -8,11 +8,11 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.mjs
-    siteTitle: `My Blog`,
+    siteTitle: `Ben's Blog`,
     siteTitleAlt: `My Blog`,
     siteHeadline: `Ben Finch Blog`,
     siteUrl: `https://blog.phooey.foo`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteDescription: `A blog by Ben Finch about entrepreneurship, tech, Mormonism, and my life.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@benf2004`,
