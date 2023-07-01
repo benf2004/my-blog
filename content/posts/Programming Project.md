@@ -1,0 +1,47 @@
+---
+title: Programming Project
+date: 2022-04-24
+excerpt: About the early days of OA2Gsheets
+timeToRead: 5 Minutes
+tags:
+- Blogspot imported
+- Programming
+--- 
+
+By Ben Finch
+
+Hello! Thanks for scrolling by. In this post, I will be discussing the programming project that I have been working on for the past few months. 
+
+I have been making a Google Chrome Extension, working on it intermittently when I have the time and desire. I have worked on it quite a bit in the past few weeks and was able to finish a (very rough but functional) version in February. 
+
+For my Amazon business, I do something called online arbitrage/sourcing. I look on retail and wholesale websites and compare the prices with Amazon. If I'm able to make a profit on the item, I will buy it and sell it. A key to streamlining my decision process on what products to investigate further and eventually sell is seeing the statistics like my potential profit margin and return on investment. Even though there are plenty of tools that allow me to do this, another problem I had was transferring this data into a centralized location so I could easily reorder hit products and update my numbers as prices change. While there are some tools that will import your product data from Amazon, you have to manually go into the app and add the cost of goods, sourcing link, and other information. Plus, the interfaces were usually over-complicated or just plain bad. This resulted in me losing a lot of time while sourcing. 
+
+Thus, I set out on a journey to DIY it and solve this problem by using my very limited coding skills. Like my programming teacher likes to say: "a programmer will spend months automating to remove a repeated 10-second inconvenience".  This inconvenience was more than 10 seconds, however. It was more like 1 minute per item. And with 5-15 items per sourcing session, that adds up quickly. 
+
+Enter: Amazon OA2Gsheets
+
+OA stands for online arbitrage; Gsheets is google sheets. What my chrome extension does is it extracts the Amazon Standard Identification Number (ASIN) from the URL and then sends it to an API that holds a bunch of info about that product. Using that, I automatically fill in the price, title, amounts of various fees (like the FBA shipping fee), and other information. The user then inputs their product cost and sourcing link or any notes and then it gets sent to a google spreadsheet (currently, all I have working is my spreadsheet; I intend to let the user pick their own spreadsheet, I just haven't implemented yet). 
+
+Then, when I/the user wants to reorder something, I can easily pull up all my products in a spreadsheet and click on my sourcing link. Or, say I want to adjust my price or cost of goods, I can simply adjust them in the spreadsheet. This is the main differentiator from my main competitor; once product info gets exported to the spreadsheet, in their extension, the numbers are static, meaning they will not all automatically adjust if you change one of them. My program exports the dependent variables like profit and ROI as formulas so that when you update an independent variable (COGS or Price) the dependent variables automatically adjust. This is crucial in saving time while sourcing. My latest version also displays the profit & ROI right on the extension box without having to export it to the spreadsheet first, meaning I can calculate my profit etc. without leaving the product page. 
+
+|   |
+|---|
+|[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjegBofUe2Vf4I_HKY99Mmqm6aNxHvRBx5EsBSOnKMeChrJMfVQvbynd-lY4bLu5erYGXuBRix9FGvyY--hmhPyafp72Mpk1he4OMt_YlkkFRVBmhVAwQz-9aTKRdaMGdYZVOjBLa43M63HoyKhxxvtyLNNexhgDs2TxbdZhBgJbOEWBh_NoLQU0ZiD/s320/Screenshot%202022-04-24%202.15.25%20PM.png)](https://www.blogger.com/blog/post/edit/2067534601276460215/6617616393642481032#)|
+|My extension popup (w/ a very barebones UI)|
+
+  
+ Some things I plan to do in the future:
+
+- Allow other users to log in and select their own spreadsheet 
+- Allow users to customize the placement of columns of the spreadsheet
+- Fix the UI to look & function better
+
+- Add units for everything ($, %)
+- Add stylish buttons/labels/fonts 
+
+- Embed the calculator/input/export page directly into the Amazon webpage rather than a pop-up
+- Change login/export page to in popup iframe window (yes, there is a secret page on the blog where you can log in to and use this extension ;)
+- Update google login to new API (released a few weeks ago)
+- Publish the extension to the Chrome Web Store!
+
+Anyways, the Amazon seller software tools market is a hot one, and even if I'm the only one who uses this product, I think it's been a wonderful learning experience (even though I now hate JavaScript). If any of you have a hot idea for a chrome extension, let me know!
