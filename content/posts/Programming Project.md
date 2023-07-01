@@ -45,3 +45,5 @@ Then, when I/the user wants to reorder something, I can easily pull up all my pr
 - Publish the extension to the Chrome Web Store!
 
 Anyways, the Amazon seller software tools market is a hot one, and even if I'm the only one who uses this product, I think it's been a wonderful learning experience (even though I now hate JavaScript). If any of you have a hot idea for a chrome extension, let me know!
+
+*Update July 1, 2023. I developed this chrome extension throughout summer 2022. You can view the final product at https://oa2gsheets.com. I have come to love Javascript.*
