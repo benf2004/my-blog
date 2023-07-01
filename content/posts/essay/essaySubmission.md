@@ -38,6 +38,3 @@ As time passed, the young seed transformed into a vibrant dandelion, its petals 
 And so, dear reader, let the tale of the dandelion seed inspire you. Embrace the dance of financial planning as a guiding light on your own journey. For just like the dandelion seed, you hold within you the potential to transform your dreams into reality. With financial planning as your partner, you can waltz through life's meadow, confident that each step will lead you closer to the abundant and magical future that awaits.
 
 Remember, young seed, the dance begins now.
-
-
-
