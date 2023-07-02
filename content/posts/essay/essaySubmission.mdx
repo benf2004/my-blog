@@ -55,3 +55,23 @@ Remember, young seed, the dance begins now.
     theme="preferred_color_scheme"
     lang="en"
 />
+<script>
+  function changeGiscusTheme () {
+    const theme = localStorage.getItem("theme-ui-color-mode")
+
+    function sendMessage(message) {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) return;
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    }
+
+    sendMessage({
+      setConfig: {
+        theme: theme
+      }
+    });
+  }
+  changeGiscusTheme()
+
+   document.querySelector("button").addEventListener("click", changeGiscusTheme)
+</script>

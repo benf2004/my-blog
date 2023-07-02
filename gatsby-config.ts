@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
     siteDescription: `A blog by Ben Finch about entrepreneurship, tech, Mormonism, and my life.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@benf2004`,
+    author: `Ben Finch`,
   },
   trailingSlash: `never`,
   plugins: [
