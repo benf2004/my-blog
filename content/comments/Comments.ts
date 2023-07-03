@@ -1,31 +1,38 @@
 import React, { useEffect } from 'react';
+import Giscus from '@giscus/react';
 
-const Comments = () => {
+interface CommentsProps {
+    // Define the props for the component here
+    theme?: string;
+}
+
+const Comments: React.FC<CommentsProps> = ({ theme }) => {
     useEffect(() => {
         function changeGiscusTheme() {
-            const theme = localStorage.getItem('theme-ui-color-mode');
+            const selectedTheme = theme || localStorage.getItem('theme-ui-color-mode');
 
-            function sendMessage(message) {
+            function sendMessage(message: any) {
                 const iframe = document.querySelector('iframe.giscus-frame');
                 if (!iframe) return;
-                iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+                iframe.contentWindow?.postMessage({ giscus: message }, 'https://giscus.app');
             }
 
             sendMessage({
                 setConfig: {
-                    theme: theme,
+                    theme: selectedTheme,
                 },
             });
         }
 
         changeGiscusTheme();
 
-        document.querySelector('button').addEventListener('click', changeGiscusTheme);
+        document.querySelector('button')?.addEventListener('click', changeGiscusTheme);
 
         return () => {
-            document.querySelector('button').removeEventListener('click', changeGiscusTheme);
+            // Cleanup code here (remove event listeners, etc.) if needed
+            document.querySelector('button')?.removeEventListener('click', changeGiscusTheme);
         };
-    }, []);
+    }, [theme]);
 
     return (
         <Giscus
