@@ -7,10 +7,27 @@ const Comments = () => {
 
     useEffect(() => {
         const handleStorageChange = (event) => {
+            console.log(event)
             if (event.key === 'theme-ui-color-mode') {
-                setTheme(event.newValue);
+                changeGiscusTheme()
             }
         };
+
+        function changeGiscusTheme() {
+            const theme = localStorage.getItem('theme-ui-color-mode');
+
+            function sendMessage(message) {
+                const iframe = document.querySelector('iframe');
+                if (!iframe) return;
+                iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+                setConfig: {
+                    theme: theme,
+                },
+            });
+        }
 
         const storedTheme = localStorage.getItem('theme-ui-color-mode');
         if (storedTheme) {
@@ -18,10 +35,9 @@ const Comments = () => {
         }
 
         window.addEventListener('storage', handleStorageChange);
-        console.log(window)
 
         return () => {
-            window.addEventListener('storage', handleStorageChange);
+            window.removeEventListener('storage', handleStorageChange);
         };
     }, []);
 
