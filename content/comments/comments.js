@@ -24,6 +24,7 @@ const Comments = () => {
         function listeners(){
             let button = document.querySelector(`button[title="Activate Dark Mode"]`)
             if (!button) button = document.querySelector(`button[title="Activate Light Mode"]`)
+            console.log(button)
             if (button) button.addEventListener('click', changeGiscusTheme);
         }
 
