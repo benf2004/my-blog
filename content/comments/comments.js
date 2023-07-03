@@ -1,34 +1,20 @@
 import * as React from 'react';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import Giscus from '@giscus/react';
 
 const Comments = () => {
+    const [theme, setTheme] = useState(localStorage.getItem('theme-ui-color-mode'));
+
     useEffect(() => {
-        function changeGiscusTheme() {
-            const theme = localStorage.getItem('theme-ui-color-mode');
+        const handleStorageChange = () => {
+            setTheme(localStorage.getItem('theme-ui-color-mode'));
+        };
 
-            function sendMessage(message) {
-                const iframe = document.querySelector('iframe[title="Comments"]');
-                if (!iframe) return;
-                iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-            }
+        window.addEventListener('storage', handleStorageChange);
 
-            sendMessage({
-                setConfig: {
-                    theme: theme,
-                },
-            });
-        }
-
-        changeGiscusTheme();
-        function listeners(){
-            let button = document.querySelector(`button[title="Activate Dark Mode"]`)
-            if (!button) button = document.querySelector(`button[title="Activate Light Mode"]`)
-            console.log(button)
-            if (button) button.addEventListener('click', changeGiscusTheme);
-        }
-
-        setTimeout(listeners, 1000)
+        return () => {
+            window.removeEventListener('storage', handleStorageChange);
+        };
     }, []);
 
     return (
@@ -43,7 +29,7 @@ const Comments = () => {
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="top"
-            theme="preferred_color_scheme"
+            theme={theme} // Pass the theme state variable
             lang="en"
         />
     );
