@@ -8,7 +8,7 @@ const Comments = () => {
             const theme = localStorage.getItem('theme-ui-color-mode');
 
             function sendMessage(message) {
-                const iframe = document.querySelector('iframe.giscus-frame');
+                const iframe = document.querySelector('iframe[title="Comments"]');
                 if (!iframe) return;
                 iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
             }
@@ -21,11 +21,12 @@ const Comments = () => {
         }
 
         changeGiscusTheme();
-
-        document.querySelector('button').addEventListener('click', changeGiscusTheme);
+        let button = document.querySelector(`button[title="Activate Dark Mode"]`)
+        if (!button) button = document.querySelector(`button[title="Activate Light Mode"]`)
+        button.addEventListener('click', changeGiscusTheme);
 
         return () => {
-            document.querySelector('button').removeEventListener('click', changeGiscusTheme);
+            button.removeEventListener('click', changeGiscusTheme);
         };
     }, []);
 
