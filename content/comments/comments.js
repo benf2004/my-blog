@@ -21,13 +21,13 @@ const Comments = () => {
         }
 
         changeGiscusTheme();
-        let button = document.querySelector(`button[title="Activate Dark Mode"]`)
-        if (!button) button = document.querySelector(`button[title="Activate Light Mode"]`)
-        button.addEventListener('click', changeGiscusTheme);
+        function listeners(){
+            let button = document.querySelector(`button[title="Activate Dark Mode"]`)
+            if (!button) button = document.querySelector(`button[title="Activate Light Mode"]`)
+            if (button) button.addEventListener('click', changeGiscusTheme);
+        }
 
-        return () => {
-            button.removeEventListener('click', changeGiscusTheme);
-        };
+        setTimeout(listeners, 1000)
     }, []);
 
     return (
