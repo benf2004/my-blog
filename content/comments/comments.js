@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react';
 import Giscus from '@giscus/react';
 
 const Comments = () => {
-    const [theme, setTheme] = useState(localStorage.getItem('theme-ui-color-mode'));
+    const [theme, setTheme] = useState('');
 
     useEffect(() => {
         const handleStorageChange = () => {
@@ -29,7 +29,7 @@ const Comments = () => {
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="top"
-            theme={theme} // Pass the theme state variable
+            theme={theme}
             lang="en"
         />
     );
