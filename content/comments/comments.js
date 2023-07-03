@@ -6,14 +6,22 @@ const Comments = () => {
     const [theme, setTheme] = useState('');
 
     useEffect(() => {
-        const handleStorageChange = () => {
-            setTheme(localStorage.getItem('theme-ui-color-mode'));
+        const handleStorageChange = (event) => {
+            if (event.key === 'theme-ui-color-mode') {
+                setTheme(event.newValue);
+            }
         };
 
+        const storedTheme = localStorage.getItem('theme-ui-color-mode');
+        if (storedTheme) {
+            setTheme(storedTheme);
+        }
+
         window.addEventListener('storage', handleStorageChange);
+        console.log(window)
 
         return () => {
-            window.removeEventListener('storage', handleStorageChange);
+            window.addEventListener('storage', handleStorageChange);
         };
     }, []);
 
